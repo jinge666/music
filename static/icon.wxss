@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2564518 */
+  src: url('//at.alicdn.com/t/font_2564518_9p8itudtqi.woff2?t=1627546392322') format('woff2'),
+       url('//at.alicdn.com/t/font_2564518_9p8itudtqi.woff?t=1627546392322') format('woff'),
+       url('//at.alicdn.com/t/font_2564518_9p8itudtqi.ttf?t=1627546392322') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tuijian:before {
+  content: "\e627";
+}
+
+.icon-paihangbang:before {
+  content: "\e629";
+}
+
+.icon-zhibo:before {
+  content: "\e8c1";
+}
+
+.icon-gedan:before {
+  content: "\e600";
+}
+
+.icon-diantai:before {
+  content: "\e693";
+}
+
+.icon-bluetooth_link:before {
+  content: "\e697";
+}
+
+.icon-settings:before {
+  content: "\e699";
+}
+
+.icon-bluray:before {
+  content: "\e698";
+}
+
+.icon-wifi:before {
+  content: "\e6a4";
+}
+
+.icon-bookresource:before {
+  content: "\e6db";
+}
+
+.icon-info:before {
+  content: "\e6de";
+}

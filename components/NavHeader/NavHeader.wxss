@@ -1,0 +1,14 @@
+/* components/NavHeader/NavHeader.wxss */
+ .recommend-song {
+  color: #666666;
+  font-size: 30rpx;
+}
+
+ .recommend-text .more {
+  border: 1px solid black;
+  float: right;
+  font-size: 20rpx;
+  border-radius: 20rpx;
+  width: 100rpx;
+  text-align: center;
+}
