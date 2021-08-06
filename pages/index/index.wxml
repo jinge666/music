@@ -50,73 +50,13 @@
   <NavHeader title="热歌" nav="热歌风向标"></NavHeader>
   <!-- 内容区域 -->
   <swiper class="swiper-songs" next-margin="50rpx">
-  <swiper-item>
+  <swiper-item wx:for="{{toplist}}" wx:key="name">
     <view class="toopList-recommend">
-    <text class="toopList-tag">云音乐热歌榜></text>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-  </view>
-  </swiper-item>
-  <swiper-item>
-    <view class="toopList-recommend">
-    <text class="toopList-tag">云音乐热歌榜></text>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-  </view>
-  </swiper-item>
-  <swiper-item>
-    <view class="toopList-recommend">
-    <text class="toopList-tag">云音乐热歌榜></text>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
-    </view>
-    <view class="songs">
-    <image src="/static/images/nvsheng.jpg"></image>
-    <text>1</text>
-    <text>会不会</text>
+    <text class="toopList-tag">{{item.name}}</text>
+    <view class="songs" wx:for="{{item.tracks}}" wx:key="id" wx:for-item="musicItem" >
+    <image src="{{musicItem.al.picUrl}}"></image>
+    <text>{{index + 1}}</text>
+    <text>{{musicItem.name}}</text>
     </view>
   </view>
   </swiper-item>

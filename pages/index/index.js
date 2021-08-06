@@ -8,6 +8,7 @@ Page({
   data: {
        banner:[], //轮播图数据
        recommendList:[],  //推荐数据
+       toplist:[],  //排行榜歌单
   },
   method:{
   },
@@ -26,10 +27,19 @@ Page({
     this.setData({
       recommendList:res1.result
     })
-    console.log(res1)
     // 获取排行榜歌曲数据
-    const res2 = await request('/top/list',{idx:5})
-    console.log(res2)
+    let index = 0;
+    let resArr = [];
+    while(index < 5){
+      let res = await request('/top/list',{idx:index++});
+      // console.log(res)
+      let topListItem = {name:res.playlist.name,tracks:res.playlist.tracks.slice(0,3)};
+      resArr.push(topListItem);
+      console.log(resArr)
+      this.setData({
+         toplist:resArr
+      })
+    }
   },
 
   /**
