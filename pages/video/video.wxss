@@ -1,1 +1,103 @@
 /* pages/video/video.wxss */
+.search{
+  text-align: center;
+  display: flex;
+}
+.search image{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 10rpx;
+}
+.search .image1{
+  float: left;
+}
+.search .image2{
+  float: right;
+}
+.search .search-text{
+  color: #D43C33;
+  display: inline-block;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: 28rpx;
+  border: 1px solid #FFFBE5;
+  flex: 1;
+}
+.songs{
+  display: flex;
+  white-space: nowrap;
+  height: 70rpx;
+}
+.songs .setWH{
+  flex: 1;
+  float: left;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.songs .active{
+  border-bottom: 1px solid #D43C33;
+}
+.video{
+  width: 96%;
+  padding: 0 2%;
+}
+.video video{
+  width: 100%;
+  /* padding: 0 2% 0 2%; */
+  border-radius: 8rpx;
+}
+.video .content {
+  font-size: 26rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* footer */
+.footer {
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 0;
+}
+.footer .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.footer  .nickName {
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+  float: right;
+}
+
+.comments_praised .btn {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.comments_praised .btn:after {
+  border: none;
+}
+
+.comments_praised .item {
+  margin-left: 50rpx;
+  position: relative;
+}
+
+.comments_praised .item .count {
+  position: absolute;
+  top: -20rpx;
+  font-size: 20rpx;
+}

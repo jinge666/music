@@ -44,9 +44,8 @@ Page({
       })
     }
     else{
-      let res = await request ('/login/cellphone',{phone:this.data.phone,password:this.data.password})
+      let res = await request ('/login/cellphone',{ phone:this.data.phone, password:this.data.password, isLogin:true})
       if(res.code === 200){
-        console.log(res)
         wx.setStorageSync('userInfo', res.profile)
         wx.showToast({
           title: '登录成功',

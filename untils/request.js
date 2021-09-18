@@ -5,7 +5,16 @@ export default (url,data={},method="GET") => {
     wx.request({
       url:config.host + url,
       data,
+      header:{
+        cookie:wx.getStorageSync('cookies')?wx.getStorageSync('cookies').find(item => item.includes('MUSIC_U')):''
+      },
       success:(res) => {
+        if(data.isLogin){
+          wx.setStorage({
+            key:'cookies',
+            data:res.cookies
+          })
+        }
         resolve(res.data);
       },
       fail:(err) => {
